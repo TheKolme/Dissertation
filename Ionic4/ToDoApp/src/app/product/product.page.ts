@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-favorites',
-  templateUrl: './favorites.page.html',
-  styleUrls: ['./favorites.page.scss'],
+  selector: 'app-product',
+  templateUrl: './product.page.html',
+  styleUrls: ['./product.page.scss'],
 })
-export class FavoritesPage implements OnInit {
+export class ProductPage implements OnInit {
 
   constructor(private navCtrl: NavController) { }
 
@@ -16,7 +16,12 @@ export class FavoritesPage implements OnInit {
   gotoHome() {
     this.navCtrl.navigateForward('/home');
   }
+  gotoFavorites() {
+    this.navCtrl.navigateForward('/favorites');
+  }
+
   gotoProduct() {
     this.navCtrl.navigateForward('/product');
   }
+
 }

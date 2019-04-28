@@ -14,5 +14,9 @@ export class HomePage {
   gotoFavorites() {
     this.navCtrl.navigateForward('/favorites');
   }
+
+  gotoProduct() {
+    this.navCtrl.navigateForward('/product');
+  }
 }
 

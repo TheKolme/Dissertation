@@ -1,0 +1,57 @@
+<ion-header  no-shadow no-border >
+     <ion-toolbar color="translucent">
+      <ion-buttons slot="primary">
+          <ion-button color="secondary" size="small" fill="clear">
+              <ion-icon name="person" slot="icon-only" color="primary"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="secondary">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content fullscreen color="secondary">
+    <ion-slides pager>
+        <ion-slide>
+            <img src="/assets/2.jpg"/>
+        </ion-slide>
+        <ion-slide> 
+            <img src="/assets/4.jpg"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/5.jpg"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/6.jpg"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/7.jpg"/>
+        </ion-slide>
+      </ion-slides> 
+
+      
+      <script src="app.js"></script>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-tabs>
+            <ion-tab-bar slot="bottom">
+              <ion-tab-button tab="cart">
+                <ion-icon name="cart"></ion-icon>
+                <!--<ion-label>Schedule</ion-label>-->
+                <ion-badge>3</ion-badge>
+              </ion-tab-button>
+          
+              <ion-tab-button tab="search" (click)="gotoHome()">
+                <ion-icon name="search"></ion-icon>
+              </ion-tab-button>
+          
+              <ion-tab-button tab="favorites" (click)="gotoFavorites()">
+                  <ion-icon name="heart"></ion-icon>
+              </ion-tab-button>
+            </ion-tab-bar>
+          </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
