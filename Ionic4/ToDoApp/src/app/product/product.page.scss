@@ -1,6 +1,49 @@
+h1{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   
+};
+img{
+   width: 100%;
+};
+.card-title{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   font-size: 12pt;
+};
+.card-description{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 12pt;
+};
+.box-shadow{
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+   border-radius: 20px;
+   z-index: 3;
+   margin-top: -70px;
+};
+
+ion-title{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+};
+
 //.product-img{
  //   margin-top: -100px;
 //}
 ion-slide{
    margin-top: -100px;
-}
+   z-index: 1;
+   
+};
+.size-label{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   font-size: 12pt;
+};
+.size-text{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 10pt;
+  // text-transform: lowercase;
+};
+
+
