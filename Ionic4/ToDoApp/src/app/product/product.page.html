@@ -1,5 +1,5 @@
-<ion-header  no-shadow no-border>
-     <ion-toolbar>
+<ion-header  no-shadow no-border >
+     <ion-toolbar class="tool-bar">
       <ion-buttons slot="primary">
           <ion-button color="secondary" size="small" fill="clear">
               <ion-icon name="person" slot="icon-only" color="primary"></ion-icon>
@@ -12,7 +12,8 @@
   </ion-header>
 
 <ion-content fullscreen color="secondary">
-    <ion-slides pager>
+    <ion-button size="small" class="page-btn"><div class="slider-info">{{currentSlide}} / {{totalSlides}}</div></ion-button>
+    <ion-slides pager="false" #ProductSlider>
         <ion-slide>
             <img src="/assets/2.jpg"/>
         </ion-slide>
@@ -79,7 +80,7 @@
             </ion-grid>
           </ion-buttons>
         </ion-item>
-     </ion-card>
+     </ion-card> 
       
      <ion-item >
         <ion-label class="price" color="primary">€10</ion-label>

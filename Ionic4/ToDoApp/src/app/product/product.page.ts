@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NavController, IonSlides, IonSlide } from '@ionic/angular';
 
 @Component({
   selector: 'app-product',
@@ -8,9 +8,28 @@ import { NavController } from '@ionic/angular';
 })
 export class ProductPage implements OnInit {
 
+  @ViewChild('ProductSlider') productSlider: IonSlides;
+
+  public currentSlide: number = 1;
+
+  public totalSlides: number = 0;
+
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+    this.productSlider.ionSlideDrag.subscribe(() => {
+      this.productSlider.stopAutoplay();
+    });
+
+    this.productSlider.length().then(count => { this.totalSlides = count; });
+
+    this.productSlider.ionSlideDidChange.subscribe((e) => {
+      this.productSlider.getActiveIndex().then(index => {
+        this.currentSlide = index + 1;
+      });
+    })
+
+    this.productSlider.startAutoplay();
   }
 
   gotoHome() {
