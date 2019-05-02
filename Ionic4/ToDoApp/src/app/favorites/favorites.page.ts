@@ -16,7 +16,12 @@ export class FavoritesPage implements OnInit {
   gotoHome() {
     this.navCtrl.navigateForward('/home');
   }
+
   gotoProduct() {
     this.navCtrl.navigateForward('/product');
+  }
+
+  gotoCart() {
+    this.navCtrl.navigateForward('/cart');
   }
 }

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="primary">
+        <ion-button color="secondary" size="small" fill="clear">
+            <ion-icon name="person" slot="icon-only" color="primary"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title color="primary">Cart</ion-title>
+      <ion-buttons slot="secondary">
+        <ion-back-button  slot="start"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color = "secondary">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="1" size-xs="1" margin-vertical >
+        <ion-button fill="clear" justify-content-center align-items-center style="height: 100%">
+            <ion-icon name="trash"  size="small" color="primary" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size-sm="11" size-xs="11">
+        <ion-card>
+          <ion-item lines="none">
+          <ion-grid>
+            <ion-row>
+              <ion-col size-sm="6" size-xs="12">
+                  <ion-item lines="none">
+                      <ion-thumbnail size-sm="6" size-xs="4" slot="start" size="20">
+                          <img class="cart-thumb" src="/assets/1.jpg"/>
+                        </ion-thumbnail>
+                      </ion-item>
+              </ion-col>
+              <ion-col size-sm="6" size-xs="12">
+                  <ion-item lines="none">
+                      <ion-card-header size-sm="6" size-xs="8"slot="start">
+                        <ion-card-title class="card-title" color="primary">Lorum Ipsum, you need to</ion-card-title>
+                        <ion-card-subtitle class="card-subtitle" color="primary">If you are going to use a pass age of Lorum Ipsum</ion-card-subtitle>
+                            <ion-label class="cart-label" color="primary">€10</ion-label>
+                      </ion-card-header>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          </ion-item>
+          
+                
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-tabs>
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="cart">
+              <ion-icon name="cart"></ion-icon>
+              <!--<ion-label>Schedule</ion-label>-->
+              <ion-badge>3</ion-badge>
+            </ion-tab-button>
+        
+            <ion-tab-button tab="search" (click)="gotoHome()">
+              <ion-icon name="search"></ion-icon>
+            </ion-tab-button>
+        
+            <ion-tab-button tab="favorites" (click)="gotoFavorites()">
+                <ion-icon name="heart"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

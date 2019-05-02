@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController, IonSlides, IonSlide } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-product',
@@ -14,7 +15,7 @@ export class ProductPage implements OnInit {
 
   public totalSlides: number = 0;
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private toastCtrl:ToastController) { }
 
   ngOnInit() {
     this.productSlider.ionSlideDrag.subscribe(() => {
@@ -41,6 +42,23 @@ export class ProductPage implements OnInit {
 
   gotoProduct() {
     this.navCtrl.navigateForward('/product');
+  }
+
+  gotoCart() {
+    this.navCtrl.navigateForward('/cart');
+  }
+
+  async showToast() {
+    let toast = await this.toastCtrl.create({
+      message: 'Product added to cart',
+      duration: 5000,
+      color: 'medium',
+      showCloseButton: true,
+      closeButtonText: 'Close',
+      position: 'bottom'
+    });
+
+    toast.present();
   }
 
 }

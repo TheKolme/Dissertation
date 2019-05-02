@@ -84,7 +84,7 @@
       
      <ion-item >
         <ion-label class="price" color="primary">€10</ion-label>
-        <ion-button shape="round" size="default" color="primary" class="btn" slot="end">Add to cart
+        <ion-button shape="round" size="default" color="primary" class="btn" slot="end" (click)="showToast()">Add to cart
            <ion-icon name="cart" slot="start"></ion-icon>
         </ion-button>
      </ion-item>
@@ -97,7 +97,7 @@
     <ion-toolbar>
         <ion-tabs>
             <ion-tab-bar slot="bottom">
-              <ion-tab-button tab="cart">
+              <ion-tab-button tab="cart" (click)="gotoCart()">
                 <ion-icon name="cart"></ion-icon>
                 <!--<ion-label>Schedule</ion-label>-->
                 <ion-badge>3</ion-badge>

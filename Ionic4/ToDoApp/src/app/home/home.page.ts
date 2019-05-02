@@ -18,5 +18,9 @@ export class HomePage {
   gotoProduct() {
     this.navCtrl.navigateForward('/product');
   }
+
+  gotoCart() {
+    this.navCtrl.navigateForward('/cart');
+  }
 }
 
