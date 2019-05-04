@@ -48,6 +48,10 @@ export class ProductPage implements OnInit {
     this.navCtrl.navigateForward('/cart');
   }
 
+  gotoProfile() {
+    this.navCtrl.navigateForward('/profile');
+  }
+
   async showToast() {
     let toast = await this.toastCtrl.create({
       message: 'Product added to cart',

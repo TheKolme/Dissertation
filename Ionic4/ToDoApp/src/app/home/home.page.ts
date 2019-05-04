@@ -22,5 +22,9 @@ export class HomePage {
   gotoCart() {
     this.navCtrl.navigateForward('/cart');
   }
+
+  gotoProfile(){
+    this.navCtrl.navigateForward('/profile');
+  }
 }
 

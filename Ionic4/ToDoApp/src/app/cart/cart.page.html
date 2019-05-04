@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="secondary">
     <ion-buttons slot="primary">
-        <ion-button color="secondary" size="small" fill="clear">
+        <ion-button color="secondary" size="small" fill="clear" (click)="gotoProfile()">
             <ion-icon name="person" slot="icon-only" color="primary"></ion-icon>
           </ion-button>
       </ion-buttons>
@@ -44,13 +44,141 @@
             </ion-row>
           </ion-grid>
           </ion-item>
-          
-                
         </ion-card>
       </ion-col>
     </ion-row>
+
+    <ion-row>
+      <ion-col size-sm="1" size-xs="1" margin-vertical >
+        <ion-button fill="clear" justify-content-center align-items-center style="height: 100%">
+            <ion-icon name="trash"  size="small" color="primary" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size-sm="11" size-xs="11">
+        <ion-card>
+          <ion-item lines="none">
+          <ion-grid>
+            <ion-row>
+              <ion-col size-sm="4" size-xs="4" class="padding" >
+                  <ion-item lines="none" class="padding">
+                      <ion-thumbnail  slot="start" size="20" class="padding">
+                          <img class="cart-thumb" src="/assets/2.jpg"  />
+                        </ion-thumbnail>
+                      </ion-item>
+              </ion-col>
+              <ion-col size-sm="8" size-xs="8" class="padding">
+                  <ion-item lines="none" class="padding">
+                      <ion-card-header class="padding" slot="start">
+                        <ion-card-title class="card-title" color="primary">Top with stripes</ion-card-title>
+                        <ion-card-subtitle class="card-subtitle" color="primary">This top has vertical stripes</ion-card-subtitle>
+                            <ion-label class="cart-label" color="primary">€10</ion-label>
+                      </ion-card-header>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-sm="1" size-xs="1" margin-vertical >
+        <ion-button fill="clear" justify-content-center align-items-center style="height: 100%">
+            <ion-icon name="trash"  size="small" color="primary" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size-sm="11" size-xs="11">
+        <ion-card>
+          <ion-item lines="none">
+          <ion-grid>
+            <ion-row>
+              <ion-col size-sm="4" size-xs="4" class="padding" >
+                  <ion-item lines="none" class="padding">
+                      <ion-thumbnail  slot="start" size="20" class="padding">
+                          <img class="cart-thumb" src="/assets/3.jpg"  />
+                        </ion-thumbnail>
+                      </ion-item>
+              </ion-col>
+              <ion-col size-sm="8" size-xs="8" class="padding">
+                  <ion-item lines="none" class="padding">
+                      <ion-card-header class="padding" slot="start">
+                        <ion-card-title class="card-title" color="primary">Top with stripes</ion-card-title>
+                        <ion-card-subtitle class="card-subtitle" color="primary">This top has vertical stripes</ion-card-subtitle>
+                            <ion-label class="cart-label" color="primary">€10</ion-label>
+                      </ion-card-header>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col size-sm="1" size-xs="1" margin-vertical >
+          <ion-button fill="clear" justify-content-center align-items-center style="height: 100%">
+              <ion-icon name="trash"  size="small" color="primary" slot="icon-only"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size-sm="11" size-xs="11">
+          <ion-card>
+            <ion-item lines="none">
+            <ion-grid>
+              <ion-row>
+                <ion-col size-sm="4" size-xs="4" class="padding" >
+                    <ion-item lines="none" class="padding">
+                        <ion-thumbnail  slot="start" size="20" class="padding">
+                            <img class="cart-thumb" src="/assets/4.jpg"  />
+                          </ion-thumbnail>
+                        </ion-item>
+                </ion-col>
+                <ion-col size-sm="8" size-xs="8" class="padding">
+                    <ion-item lines="none" class="padding">
+                        <ion-card-header class="padding" slot="start">
+                          <ion-card-title class="card-title" color="primary">Top with stripes</ion-card-title>
+                          <ion-card-subtitle class="card-subtitle" color="primary">This top has vertical stripes</ion-card-subtitle>
+                              <ion-label class="cart-label" color="primary">€10</ion-label>
+                        </ion-card-header>
+                      </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
   </ion-grid>
 
+  <ion-item class="subtotal-pricing" color="secondary" lines="none">
+    <ion-label class="font" color="primary" slot="end">Subtotal</ion-label>
+    <ion-label class="font" color="primary" slot="end">€40</ion-label>
+  </ion-item>
+  <ion-item class="subtotal-pricing" color="secondary" lines="none">
+    <ion-label class="font" color="primary" slot="end">Shipping</ion-label>
+    <ion-label class="font" color="primary" slot="end">€5</ion-label>
+  </ion-item>
+  <ion-item class="total-pricing spacing" color="secondary" lines="none">
+    <ion-label class="font" color="primary" slot="end">Total</ion-label>
+    <ion-label class="font" color="primary" slot="end">€45</ion-label>
+  </ion-item>
+
+  
+    <ion-grid>
+        <ion-row>
+        <ion-col class="order-btns">
+            <ion-button shape="round" expand="block" size="large" color="primary" (click)="showToast()">
+                <ion-label>Order</ion-label>
+              </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  
+ 
 </ion-content>
 
 <ion-footer>

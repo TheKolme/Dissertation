@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cart',
@@ -8,7 +9,7 @@ import { NavController } from '@ionic/angular';
 })
 export class CartPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private toastCtrl:ToastController) { }
 
   ngOnInit() {
   }
@@ -19,6 +20,23 @@ export class CartPage implements OnInit {
 
   gotoFavorites() {
     this.navCtrl.navigateForward('/favorites');
+  }
+
+  gotoProfile() {
+    this.navCtrl.navigateForward('/profile');
+  }
+
+  async showToast() {
+    let toast = await this.toastCtrl.create({
+      message: 'You just ordered your items',
+      duration: 5000,
+      color: 'medium',
+      showCloseButton: true,
+      closeButtonText: 'Close',
+      position: 'bottom'
+    });
+
+    toast.present();
   }
 
 }

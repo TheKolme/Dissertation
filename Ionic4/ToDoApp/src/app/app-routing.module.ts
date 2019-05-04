@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'favorites', loadChildren: './favorites/favorites.module#FavoritesPageModule' },
   { path: 'product', loadChildren: './product/product.module#ProductPageModule' },
   { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
 ];
 
 @NgModule({

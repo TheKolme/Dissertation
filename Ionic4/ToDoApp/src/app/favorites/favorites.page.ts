@@ -24,4 +24,8 @@ export class FavoritesPage implements OnInit {
   gotoCart() {
     this.navCtrl.navigateForward('/cart');
   }
+
+  gotoProfile() {
+    this.navCtrl.navigateForward('/profile');
+  }
 }

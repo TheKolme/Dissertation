@@ -56,4 +56,24 @@ ion-card{
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
+ };
+ .subtotal-pricing{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15pt;
+   margin-bottom: -10px;
+ };
+ .total-pricing{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   font-size: 20pt;
+ };
+ .font{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ };
+ .order-btns{
+   position: fixed !important;
+   bottom: 60px;
+ };
+ .spacing{
+    padding-bottom: 80px;
  }
