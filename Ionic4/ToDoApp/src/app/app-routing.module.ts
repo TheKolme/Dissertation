@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'product', loadChildren: './product/product.module#ProductPageModule' },
   { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
 ];
 
 @NgModule({

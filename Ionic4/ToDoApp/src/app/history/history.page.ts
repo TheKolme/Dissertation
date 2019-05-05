@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss'],
+  selector: 'app-history',
+  templateUrl: './history.page.html',
+  styleUrls: ['./history.page.scss'],
 })
-export class ProfilePage implements OnInit {
+export class HistoryPage implements OnInit {
 
   constructor(private navCtrl: NavController) { }
 
@@ -28,4 +28,9 @@ export class ProfilePage implements OnInit {
   gotoHistory() {
     this.navCtrl.navigateForward('/history');
   }
+
+  gotoProfile() {
+    this.navCtrl.navigateForward('/profile');
+  }
+
 }
