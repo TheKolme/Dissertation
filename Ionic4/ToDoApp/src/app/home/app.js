@@ -5,3 +5,4 @@ slides.options = {
   initialSlide: 1,
   speed: 400
 }
+

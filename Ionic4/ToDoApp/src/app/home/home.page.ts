@@ -7,10 +7,21 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'];
 
   constructor(private navCtrl: NavController) {
 
   }
+
+  slideOpts = {
+    loop: true,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    grabCursor: true,
+    spaceBetween: 30,
+    zoom: false
+  };
+
   gotoFavorites() {
     this.navCtrl.navigateForward('/favorites');
   }
@@ -23,7 +34,7 @@ export class HomePage {
     this.navCtrl.navigateForward('/cart');
   }
 
-  gotoProfile(){
+  gotoProfile() {
     this.navCtrl.navigateForward('/profile');
   }
 }
