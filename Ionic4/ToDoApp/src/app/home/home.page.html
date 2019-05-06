@@ -77,10 +77,10 @@
         </ion-slide>
       </ion-slides> -->
 
-      <ion-chip color="secondary">
-          <ion-label color="primary">New</ion-label>
+      <ion-chip color="secondary" *ngFor="let image of images" (click)="goToSlide(image.index)">
+          <ion-label color="primary">{{image.name}}</ion-label>
         </ion-chip>
-        <ion-chip color="secondary">
+        <!-- <ion-chip color="secondary">
           <ion-label color="primary">Dress</ion-label>
         </ion-chip>
         <ion-chip color="secondary">
@@ -89,7 +89,7 @@
         <ion-chip color="secondary">
           <ion-label color="primary">Tops</ion-label>
         </ion-chip>
-        <ion-chip color="secondary">
+        <ion-chip color="secondary" (click)="goToSlide(0)">
           <ion-label color="primary">Accessories</ion-label>
         </ion-chip>
         <ion-chip color="secondary">
@@ -100,51 +100,15 @@
         </ion-chip>
         <ion-chip color="secondary">
           <ion-label color="primary">Men</ion-label>
-        </ion-chip>
+        </ion-chip> -->
 
 
-      <ion-slides [options]="slideOpts">
-          <ion-slide class="slider-stl">
-            <ion-card class="carousel">
-            <img src="/assets/1.jpg" class="thumb-img">
-          </ion-card>
-          </ion-slide>
-          <ion-slide class="slider-stl">
+      <ion-slides [options]="slideOpts" #HomeSlider>
+          <ion-slide class="slider-stl" *ngFor="let image of images">
               <ion-card class="carousel">
-              <img src="/assets/2.jpg" class="thumb-img">
+              <img src="/assets/{{image.image}}" class="thumb-img">
             </ion-card>
-            </ion-slide>
-            <ion-slide class="slider-stl">
-                <ion-card class="carousel">
-                <img src="/assets/6.jpg" class="thumb-img">
-              </ion-card>
-              </ion-slide>
-              <ion-slide class="slider-stl">
-                  <ion-card class="carousel">
-                  <img src="/assets/4.jpg" class="thumb-img">
-                </ion-card>
-                </ion-slide>
-                <ion-slide class="slider-stl">
-                    <ion-card class="carousel">
-                    <img src="/assets/5.jpg" class="thumb-img">
-                  </ion-card>
-                  </ion-slide>
-                  <ion-slide class="slider-stl">
-                      <ion-card class="carousel">
-                      <img src="/assets/6.jpg" class="thumb-img">
-                    </ion-card>
-                    </ion-slide>
-                    <ion-slide class="slider-stl">
-                        <ion-card class="carousel">
-                        <img src="/assets/7.jpg" class="thumb-img">
-                      </ion-card>
-                      </ion-slide>
-                      <ion-slide class="slider-stl">
-                          <ion-card class="carousel">
-                          <img src="/assets/2.jpg" class="thumb-img">
-                        </ion-card>
-                        </ion-slide>
-          
+          </ion-slide>
         </ion-slides>
 
       

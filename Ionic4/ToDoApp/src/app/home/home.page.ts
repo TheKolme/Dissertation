@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +7,50 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'];
+  @ViewChild('HomeSlider') homeSlider: IonSlides;
+
+  public images = [
+    {
+      index: 0,
+      name: 'New',
+      image: '1.jpg'
+    },
+    {
+      index: 1,
+      name: 'Dress',
+      image: '2.jpg'
+    },
+    {
+      index: 2,
+      name: 'Sweatshirt',
+      image: '3.jpg'
+    },
+    {
+      index: 3,
+      name: 'Tops',
+      image: '4.jpg'
+    },
+    {
+      index: 4,
+      name: 'Accessories',
+      image: '5.jpg'
+    },
+    {
+      index: 5,
+      name: 'Bottoms',
+      image: '6.jpg'
+    },
+    {
+      index: 6,
+      name: 'Shoes',
+      image: '7.jpg'
+    },
+    {
+      index: 7,
+      name: 'Men',
+      image: '8.jpg'
+    }
+  ];
 
   constructor(private navCtrl: NavController) {
 
@@ -36,6 +79,11 @@ export class HomePage {
 
   gotoProfile() {
     this.navCtrl.navigateForward('/profile');
+  }
+
+  goToSlide(index: number)
+  {
+    this.homeSlider.slideTo(index);
   }
 }
 
