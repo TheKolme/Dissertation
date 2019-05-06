@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, IonSlides } from '@ionic/angular';
+import { products } from '../classes/product';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,8 @@ import { NavController, IonSlides } from '@ionic/angular';
 })
 export class HomePage {
   @ViewChild('HomeSlider') homeSlider: IonSlides;
+
+  public items = products;
 
   public images = [
     {
@@ -52,6 +55,10 @@ export class HomePage {
     }
   ];
 
+  cards = [
+    { title: 'Card One', name: 'Card1', icon: 'heart-empty' }
+  ];
+
   constructor(private navCtrl: NavController) {
 
   }
@@ -81,9 +88,17 @@ export class HomePage {
     this.navCtrl.navigateForward('/profile');
   }
 
-  goToSlide(index: number)
-  {
+  goToSlide(index: number) {
     this.homeSlider.slideTo(index);
+  }
+
+  toggleLiked(card: any) {
+
+    if (card.icon === 'heart') {
+      card.icon = 'heart-empty';
+    } else {
+      card.icon = 'heart';
+    }
   }
 }
 
