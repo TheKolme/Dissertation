@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController, IonSlides, IonSlide } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
+import { Product, products } from '../classes/product';
 
 @Component({
   selector: 'app-product',
@@ -15,9 +17,18 @@ export class ProductPage implements OnInit {
 
   public totalSlides: number = 0;
 
-  constructor(private navCtrl: NavController, private toastCtrl:ToastController) { }
+  private productId: number = 1;
+
+  public product: Product;
+
+  constructor(private navCtrl: NavController, private toastCtrl:ToastController, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.productId = parseInt(this.activatedRoute.snapshot.paramMap.get('productid'));
+    this.product = products.filter(product => product.id == this.productId)[0];
+
+    console.log(this.product);
+
     this.productSlider.ionSlideDrag.subscribe(() => {
       this.productSlider.stopAutoplay();
     });

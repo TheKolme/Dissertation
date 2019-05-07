@@ -121,69 +121,17 @@
   
     <ion-grid>
       <ion-row>
-          <ion-col size-sm="6" size-xs="6">
-              <ion-card class="box-shadow"  *ngFor="let card of cards">
-                 <img src="/assets/1.jpg" (click)="gotoProduct()"/>
+          <ion-col size-sm="6" size-xs="6" *ngFor="let product of items">
+              <ion-card class="box-shadow" >
+                 <img src="/assets/{{ product.image[0] }}" (click)="gotoProduct(product.id)"/>
                     <ion-item>
                         <ion-card-title color="primary">€10</ion-card-title>
-                        <ion-button fill="clear" slot="end" (click)="toggleLiked(card)">
-                        <ion-icon [name]="card.icon" color="danger" slot="icon-only"></ion-icon>
+                        <ion-button fill="clear" slot="end" >
+                        <ion-icon name="heart" color="danger" slot="icon-only"></ion-icon>
                       </ion-button>
                     </ion-item>
               </ion-card>
             </ion-col>
-
-        <ion-col size-sm="6" size-xs="6">
-            <ion-card class="box-shadow" (click)="gotoProduct()">
-               <img src="/assets/2.jpg"/>
-                  <ion-item>
-                      <ion-card-title color="primary">€10</ion-card-title>
-                      <ion-icon name="heart" color="danger" slot="end"></ion-icon>
-                  </ion-item>
-            </ion-card>
-          </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col size-sm="6" size-xs="6">
-              <ion-card class="box-shadow" (click)="gotoProduct()">
-                 <img src="/assets/3.jpg"/>
-                    <ion-item>
-                        <ion-card-title color="primary">€10</ion-card-title>
-                        <ion-icon name="heart-empty" color="danger" slot="end"></ion-icon>
-                    </ion-item>
-              </ion-card>
-            </ion-col>
-
-        <ion-col size-sm="6" size-xs="6">
-            <ion-card class="box-shadow" (click)="gotoProduct()">
-               <img src="/assets/4.jpg"/>
-                  <ion-item>
-                      <ion-card-title color="primary">€10</ion-card-title>
-                      <ion-icon name="heart" color="danger" slot="end"></ion-icon>
-                  </ion-item>
-            </ion-card>
-          </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col size-sm="6" size-xs="6">
-              <ion-card class="box-shadow" (click)="gotoProduct()">
-                 <img src="/assets/5.jpg"/>
-                    <ion-item>
-                        <ion-card-title color="primary">€10</ion-card-title>
-                        <ion-icon name="heart" color="danger" slot="end"></ion-icon>
-                    </ion-item>
-              </ion-card>
-            </ion-col>
-
-        <ion-col size-sm="6" size-xs="6">
-            <ion-card class="box-shadow" (click)="gotoProduct()">
-               <img src="/assets/6.jpg"/>
-                  <ion-item>
-                      <ion-card-title color="primary">€10</ion-card-title>
-                      <ion-icon name="heart" color="danger" slot="end"></ion-icon>
-                  </ion-item>
-            </ion-card>
-          </ion-col>
       </ion-row>
     </ion-grid>
 

@@ -76,8 +76,8 @@ export class HomePage {
     this.navCtrl.navigateForward('/favorites');
   }
 
-  gotoProduct() {
-    this.navCtrl.navigateForward('/product');
+  gotoProduct(id: number) {
+    this.navCtrl.navigateForward('/product/' + id);
   }
 
   gotoCart() {
