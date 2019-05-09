@@ -28,7 +28,7 @@ export var products: Product[] = [
         material: 'Cotton',
         price: 10,
         color: 'primary',
-        image: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
+        image: ['1.jpg', '1-1.jpg', '1-2.jpg', '1-3.jpg', '1-4.jpg']
     },
     {
         id: 2,
@@ -38,7 +38,7 @@ export var products: Product[] = [
         material: 'Denim',
         price: 20,
         color: 'warning',
-        image: ['6.jpg', '7.jpg', '8.jpg', '4.jpg', '5.jpg']
+        image: ['2.jpg', '2-1.jpg', '2-2.jpg', '2-3.jpg', '2-4.jpg']
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ export var products: Product[] = [
         material: 'Wool',
         price: 30,
         color: 'warning',
-        image: ['2.jpg', '5.jpg', '8.jpg', '4.jpg', '5.jpg']
+        image: ['3.jpg', '3-1.jpg', '3-2.jpg', '3-3.jpg', '3-4.jpg']
     },
     {
         id: 4,
@@ -58,7 +58,7 @@ export var products: Product[] = [
         material: 'Leather',
         price: 40,
         color: 'warning',
-        image: ['1.jpg', '3.jpg', '8.jpg', '4.jpg', '5.jpg']
+        image: ['4.jpg', '4-1.jpg', '4-2.jpg', '4-3.jpg', '4-4.jpg', '4-5.jpg']
     },
     {
         id: 5,
@@ -68,7 +68,7 @@ export var products: Product[] = [
         material: 'Fur',
         price: 50,
         color: 'warning',
-        image: ['8.jpg', '1.jpg', '8.jpg', '4.jpg', '5.jpg']
+        image: ['5.jpg', '5-1.jpg', '5-2.jpg']
     },
     {
         id: 6,
@@ -78,7 +78,7 @@ export var products: Product[] = [
         material: 'Silk',
         price: 60,
         color: 'danger',
-        image: ['6.jpg', '7.jpg', '8.jpg', '4.jpg', '5.jpg']
+        image: ['6.jpg', '6-1.jpg', '6-2.jpg']
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ export var products: Product[] = [
         material: 'Wool',
         price: 30,
         color: 'success',
-        image: ['4.jpg', '3.jpg', '2.jpg', '4.jpg', '5.jpg']
+        image: ['7.jpg', '7-1.jpg', '7-2.jpg']
     },
     {
         id: 8,
@@ -98,7 +98,47 @@ export var products: Product[] = [
         material: 'Denim',
         price: 10,
         color: 'warning',
-        image: ['3.jpg', '1.jpg', '5.jpg', '4.jpg', '5.jpg']
+        image: ['8.jpg', '8-1.jpg', '8-2.jpg']
+    },
+    {
+        id: 9,
+        name: 'shirt 9',
+        description: '9 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+        size: 'XS',
+        material: 'Denim',
+        price: 10,
+        color: 'warning',
+        image: ['9.jpg', '9-1.jpg', '9-2.jpg', '9-3.jpg']
+    },
+    {
+        id: 10,
+        name: 'shirt 10',
+        description: '10 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+        size: 'XS',
+        material: 'Denim',
+        price: 10,
+        color: 'warning',
+        image: ['10.jpg', '10-1.jpg', '10-2.jpg', '10-3.jpg']
+    },
+    {
+        id: 11,
+        name: 'shirt 11',
+        description: '11 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+        size: 'XS',
+        material: 'Denim',
+        price: 10,
+        color: 'warning',
+        image: ['11.jpg', '11-1.jpg', '11-2.jpg']
+    },
+    {
+        id: 12,
+        name: 'shirt 12',
+        description: '12 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using',
+        size: 'XS',
+        material: 'Denim',
+        price: 10,
+        color: 'warning',
+        image: ['12.jpg', '12-1.jpg', '12-2.jpg', '12-3.jpg']
     }
 
 ];
