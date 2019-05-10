@@ -77,7 +77,7 @@ export class HomePage {
     slidesPerView: 6,
     slidesPerGroup: 6,
     grabCursor: true,
-    spaceBetween: 0,
+    spaceBetween: 10,
     zoom: false
   };
 
@@ -98,7 +98,7 @@ export class HomePage {
   }
 
   goToSlide(index: number) {
-    this.homeSlider.slideTo(index);
+    this.homeSlider.slideTo(index + 2);
   }
 
   toggleLiked(card: any) {
