@@ -72,6 +72,15 @@ export class HomePage {
     zoom: false
   };
 
+  chipSlideOpts = {
+    loop: false,
+    slidesPerView: 6,
+    slidesPerGroup: 6,
+    grabCursor: true,
+    spaceBetween: 0,
+    zoom: false
+  };
+
   gotoFavorites() {
     this.navCtrl.navigateForward('/favorites');
   }

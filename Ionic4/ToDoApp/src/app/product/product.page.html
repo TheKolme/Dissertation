@@ -62,7 +62,7 @@
                     <div>
                         <ion-button>
                             <ion-icon name="shirt" color="primary"></ion-icon>
-                            <ion-label color="primary" class="size-text">{{ product.material }}</ion-label>
+                            <ion-label color="primary" class="size-text">{{ product.material }} &nbsp;</ion-label>
                         </ion-button>
                     </div>
                   </ion-col>
@@ -80,12 +80,15 @@
         </ion-item>
      </ion-card> 
       
-     <ion-item >
+     
+     <ion-item color="secondary" lines="none" >
         <ion-label class="price" color="primary">€{{ product.price }}</ion-label>
-        <ion-button shape="round" size="default" color="primary" class="btn" slot="end" (click)="showToast()">Add to cart
+        <ion-button shape="round" size="default" color="primary" class="btn"  (click)="showToast()">Add to cart
            <ion-icon name="cart" slot="start"></ion-icon>
         </ion-button>
      </ion-item>
+    
+   
      
 
      <script src="app.js"></script>
