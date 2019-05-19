@@ -20,10 +20,11 @@ export class Product {
 
 // what are the products?
 export var products: Product[] = [
+
     {
         id: 1,
         name: 'Black Velvet Skirt',
-        description: 'This skirt has metal snaps in front of the skirt',
+        description: 'This a front button up skirt in black velvet. ',
         size: 'M',
         material: 'Velvet',
         price: 10,
@@ -33,27 +34,27 @@ export var products: Product[] = [
     {
         id: 2,
         name: 'Green long dress with flowers',
-        description: 'This dress is long, has a zipper on the side. It also has spaghetti straps.',
+        description: 'Long floral design dress, with spaghetti straps and side zipper.',
         size: 'L',
         material: 'Polyester',
-        price: 20,
+        price: 10,
         color: 'success',
         image: ['2.jpg', '2-1.jpg', '2-2.jpg', '2-3.jpg', '2-4.jpg']
     },
     {
         id: 3,
         name: 'Grey sweatshirt',
-        description: 'This is knitted grey sweatshirt',
+        description: 'Loose fitting knitted grey sweatshirt. ',
         size: 'L',
-        material: 'Acrylick',
+        material: 'Acrylic',
         price: 10,
         color: 'medium',
-        image: ['3.jpg', '3-1.jpg', '3-2.jpg']
+        image: ['13.jpg', '3.jpg', '3-2.jpg']
     },
     {
         id: 4,
         name: 'T-shirt with plants',
-        description: 'This is MORE WATER PLEASE t-shirt with a print of plants.',
+        description: 'More Water Please t-shirt with potted plants print.',
         size: 'S',
         material: 'Cotton',
         price: 10,
@@ -63,37 +64,37 @@ export var products: Product[] = [
     {
         id: 5,
         name: 'Black Leather Bag',
-        description: 'This leather bag has three pockets in the front. ',
+        description: 'Leather backpack with 3 front pockets and large interior pocket. ',
         size: 'M',
         material: 'Leather',
-        price: 50,
+        price: 10,
         color: 'warning',
         image: ['5.jpg', '5-1.jpg', '5-2.jpg']
     },
     {
         id: 6,
         name: 'Blue Denim Jeans',
-        description: 'These blue jeans are slim fit',
+        description: 'Slim fit blue jeans.',
         size: 'L',
         material: 'Denim',
-        price: 40,
+        price: 10,
         color: 'primary',
         image: ['6.jpg', '6-1.jpg', '6-2.jpg']
     },
     {
         id: 7,
         name: 'White shoes',
-        description: 'White leather shoes with pink accent',
+        description: 'White leather slip-on shoes with pink accent.',
         size: '40',
         material: 'Leather',
-        price: 40,
+        price: 10,
         color: 'light',
         image: ['7.jpg', '7-1.jpg', '7-2.jpg']
     },
     {
         id: 8,
         name: 'White Men t-shirt',
-        description: 'White t-shirt with red.',
+        description: 'White t-shirt with red Adidas logo.',
         size: 'S',
         material: 'Cotton',
         price: 10,
@@ -103,7 +104,7 @@ export var products: Product[] = [
     {
         id: 9,
         name: 'Shirt with croissants',
-        description: 'This t-shirt has black stripes and croissants.',
+        description: 'White striped t-shirt with croissants print.',
         size: 'S',
         material: 'Cotton',
         price: 10,
@@ -113,17 +114,17 @@ export var products: Product[] = [
     {
         id: 10,
         name: 'Black t-shirt',
-        description: 'Black t-shirt with Fortnite dance.',
+        description: 'Black Fortnite t-shirt.',
         size: 'XS',
         material: 'Cotton',
         price: 10,
         color: 'warning',
-        image: ['10.jpg', '10-1.jpg', '10-2.jpg', '10-3.jpg']
+        image: ['17.jpg', '10.jpg', '10-1.jpg', '10-2.jpg', '10-3.jpg']
     },
     {
         id: 11,
         name: 'Dream On sweatshirt',
-        description: 'This is a doodle sweatshirt.',
+        description: 'Cropped sweatshirt with cute doodles print.',
         size: 'M',
         material: 'Cotton',
         price: 10,
@@ -133,12 +134,62 @@ export var products: Product[] = [
     {
         id: 12,
         name: 'Grey mom jeans',
-        description: 'These are grey denim mom jeans.',
+        description: 'Loose fit grey mom jeans.',
         size: 'L',
         material: 'Denim',
-        price: 30,
+        price: 10,
         color: 'medium',
         image: ['12.jpg', '12-1.jpg', '12-2.jpg', '12-3.jpg']
+    },
+    {
+        id: 13,
+        name: 'Black Men Shirt and Shorts',
+        description: 'Sri Lanka black t-shirt with bright accents and black shorts.',
+        size: 'S',
+        material: 'Cotton',
+        price: 10,
+        color: 'warning',
+        image: ['15.jpg', '15-1.jpg', '15-2.jpg', '15-3.jpg', '15-4.jpg']
+    },
+    {
+        id: 14,
+        name: 'Grey T-shirt',
+        description: 'Grey loose fitting t-shirt with tiny black dots.',
+        size: 'XL',
+        material: 'Cotton',
+        price: 10,
+        color: 'medium',
+        image: ['16.jpg', '16-1.jpg', '16-2.jpg']
+    },
+    {
+        id: 15,
+        name: 'Blue Men Jeans',
+        description: 'Blue faded jeans tight fit.',
+        size: 'S',
+        material: 'Denim',
+        price: 10,
+        color: 'primary',
+        image: ['18.jpg', '18-1.jpg', '18-2.jpg']
+    },
+    {
+        id: 16,
+        name: 'White Men T-shirt',
+        description: 'Manhattan print white t-shirt.',
+        size: 'S',
+        material: 'Cotton',
+        price: 10,
+        color: 'light',
+        image: ['19.jpg', '19-1.jpg', '19-2.jpg']
+    },
+    {
+        id: 17,
+        name: 'Light blue men shorts',
+        description: 'Light blue shorts above the knee fit.',
+        size: 'S',
+        material: 'Polyester',
+        price: 10,
+        color: 'primary',
+        image: ['20.jpg', '20-1.jpg', '20-2.jpg']
     }
 
 ];

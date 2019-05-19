@@ -18,7 +18,7 @@
    <ion-grid>
         <ion-row>
             <ion-col size-sm="6" size-xs="6">
-                <ion-card class="box-shadow" (click)="gotoProduct()">
+                <ion-card class="box-shadow" >
                    <img src="/assets/1.jpg"/>
                       <ion-item>
                           <ion-card-title color="primary">€10</ion-card-title>
@@ -27,7 +27,7 @@
                 </ion-card>
               </ion-col>
           <ion-col size-sm="6" size-xs="6">
-              <ion-card class="box-shadow" (click)="gotoProduct()">
+              <ion-card class="box-shadow" >
                  <img src="/assets/2.jpg"/>
                     <ion-item>
                         <ion-card-title color="primary">€10</ion-card-title>
@@ -39,7 +39,7 @@
 
         <ion-row>
             <ion-col size-sm="6" size-xs="6">
-                <ion-card class="box-shadow" (click)="gotoProduct()">
+                <ion-card class="box-shadow" >
                    <img src="/assets/5.jpg"/>
                       <ion-item>
                           <ion-card-title color="primary">€10</ion-card-title>
@@ -56,13 +56,13 @@
         <ion-tabs>
             <ion-tab-bar slot="bottom">
               <ion-tab-button tab="cart" (click)="gotoCart()">
-                <ion-icon name="cart"></ion-icon>
+                <ion-icon name="cart" color="medium"></ion-icon>
                 <!--<ion-label>Schedule</ion-label>-->
                 <ion-badge>3</ion-badge>
               </ion-tab-button>
           
               <ion-tab-button tab="search" (click)="gotoHome()">
-                <ion-icon name="search"></ion-icon>
+                <ion-icon name="search" color="medium"></ion-icon>
               </ion-tab-button>
           
               <ion-tab-button tab="favorites" >

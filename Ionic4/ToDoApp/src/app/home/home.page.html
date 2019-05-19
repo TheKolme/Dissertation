@@ -77,10 +77,14 @@
         </ion-slide>
       </ion-slides> -->
 
+      <ion-text color="primary">
+        <h1>Explore</h1>
+      </ion-text>
+
       <div class="chip-stl">
           <ion-slides [options]="chipSlideOpts">
             <ion-slide  *ngFor="let image of images" class="chip-slide">
-      <ion-chip color="secondary"  (click)="goToSlide(image.index)">
+      <ion-chip color="secondary" (click)="goToSlide(image.index)">
           <ion-label color="primary">{{image.name}}</ion-label>
         </ion-chip>
       </ion-slide>
@@ -121,7 +125,7 @@
       
 
   <ion-text color="primary">
-    <h1>Explore</h1>
+    <h1>Latest additions</h1>
   </ion-text>
   
   
@@ -150,7 +154,7 @@
       <ion-tabs>
           <ion-tab-bar slot="bottom">
             <ion-tab-button tab="cart" (click)="gotoCart()">
-              <ion-icon name="cart"></ion-icon>
+              <ion-icon name="cart" color="medium"></ion-icon>
               <!--<ion-label>Schedule</ion-label>-->
               <ion-badge>3</ion-badge>
             </ion-tab-button>
@@ -160,7 +164,7 @@
             </ion-tab-button>
         
             <ion-tab-button tab="favorites" (click)="gotoFavorites()" >
-                <ion-icon name="heart"></ion-icon>
+                <ion-icon name="heart" color="medium"></ion-icon>
             </ion-tab-button>
           </ion-tab-bar>
         </ion-tabs>

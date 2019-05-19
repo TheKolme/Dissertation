@@ -53,7 +53,7 @@
 
   <ion-item color="secondary">
     <ion-label class="label-stl" position="stacked" color="primary">Email</ion-label>
-    <ion-input class="input-stl" color="primary" name="email" type="email" placeholder="email@gmail.com"></ion-input>
+    <ion-input class="input-stl" color="primary" name="email" type="email">janesmith@gmail.com</ion-input>
     <ion-button fill="clear" slot="end">
       <ion-icon name="create" slot="icon-only"></ion-icon>
     </ion-button>
@@ -61,7 +61,7 @@
 
   <ion-item color="secondary">
       <ion-label class="label-stl" position="stacked" color="primary">Password</ion-label>
-      <ion-input class="input-stl" color="primary" name="password" type="password" placeholder="************"></ion-input>
+      <ion-input class="input-stl" color="primary" name="password" type="password" >*************</ion-input>
       <ion-button fill="clear" slot="end">
         <ion-icon name="create" slot="icon-only"></ion-icon>
       </ion-button>
@@ -69,9 +69,9 @@
 
     <ion-item color="secondary">
         <ion-label class="label-stl" position="stacked" color="primary">Address</ion-label>
-        <ion-input class="input-stl" color="primary" name="address" type="address" placeholder="my house"></ion-input>
-        <ion-input class="input-stl" color="primary" name="address" type="address" placeholder="my street"></ion-input>
-        <ion-input class="input-stl" color="primary" name="address" type="address" placeholder="Malta"></ion-input>
+        <ion-input class="input-stl" color="primary" name="address" type="address">my house</ion-input>
+        <ion-input class="input-stl" color="primary" name="address" type="address">my street</ion-input>
+        <ion-input class="input-stl" color="primary" name="address" type="address">Malta</ion-input>
         <ion-button fill="clear" slot="end">
           <ion-icon name="create" slot="icon-only"></ion-icon>
         </ion-button>
@@ -79,7 +79,7 @@
 
       <ion-item color="secondary">
           <ion-label class="label-stl" position="stacked" color="primary">Card number</ion-label>
-          <ion-input class="input-stl" color="primary" name="password" type="password" placeholder="*********123"></ion-input>
+          <ion-input class="input-stl" color="primary" name="password" type="password">*********123</ion-input>
           <ion-button fill="clear" slot="end">
             <ion-icon name="create" slot="icon-only"></ion-icon>
           </ion-button>
@@ -92,17 +92,17 @@
         <ion-tabs>
             <ion-tab-bar slot="bottom">
               <ion-tab-button tab="cart" (click)="gotoCart()">
-                <ion-icon name="cart"></ion-icon>
+                <ion-icon name="cart" color="medium"></ion-icon>
                 <!--<ion-label>Schedule</ion-label>-->
                 <ion-badge>3</ion-badge>
               </ion-tab-button>
           
               <ion-tab-button tab="search" (click)="gotoHome()">
-                <ion-icon name="search"></ion-icon>
+                <ion-icon name="search" color="medium"></ion-icon>
               </ion-tab-button>
           
               <ion-tab-button tab="favorites" (click)="gotoFavorites()">
-                  <ion-icon name="heart"></ion-icon>
+                  <ion-icon name="heart" color="medium"></ion-icon>
               </ion-tab-button>
             </ion-tab-bar>
           </ion-tabs>

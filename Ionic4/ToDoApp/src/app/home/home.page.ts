@@ -26,7 +26,7 @@ export class HomePage {
     {
       index: 2,
       name: 'Sweatshirt',
-      image: '3.jpg'
+      image: '13.jpg'
     },
     {
       index: 3,
@@ -35,8 +35,8 @@ export class HomePage {
     },
     {
       index: 4,
-      name: 'Accessories',
-      image: '5.jpg'
+      name: 'Accessory',
+      image: '14.jpg'
     },
     {
       index: 5,
@@ -74,10 +74,9 @@ export class HomePage {
 
   chipSlideOpts = {
     loop: false,
-    slidesPerView: 6,
-    slidesPerGroup: 6,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
     grabCursor: true,
-    spaceBetween: 10,
     zoom: false
   };
 
